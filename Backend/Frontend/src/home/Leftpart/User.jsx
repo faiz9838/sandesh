@@ -30,7 +30,7 @@ function User({ user }) {
             {user.fullname ? user.fullname : "Unknown User"}
           </h1>
           {/* Fallback for missing email */}
-          <span>{user.email ? user.email : "No Email"}</span>
+          <span>{isOnline ? :"Online" : "Offline"}</span>
         </div>
       </div>
     </div>
